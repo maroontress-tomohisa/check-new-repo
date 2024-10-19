@@ -1,0 +1,32 @@
+{
+  "name": "check-new-repo",
+  "repository": "git@github.com:maroontress/check-new-repo.git",
+  "version": "1.0.0",
+  "description": "A web server that monitors GitHub repository creation and prompts team association via issues.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "lint": "eslint *.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "webhook"
+  ],
+  "author": "Tomohisa Tanaka <Tomohisa.Tanaka@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "@octokit/core": "^6.1.2",
+    "express": "^4.21.1",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@stylistic/eslint-plugin-js": "^2.9.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "^20.16.13",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0"
+  }
+}
